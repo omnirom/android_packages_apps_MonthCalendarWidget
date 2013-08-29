@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.monthcalendarwidget;
+package org.omnirom.android.monthcalendarwidget;
 
 import android.annotation.TargetApi;
 import android.app.PendingIntent;

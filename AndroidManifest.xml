@@ -15,7 +15,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.monthcalendarwidget"
+    package="org.omnirom.android.monthcalendarwidget"
     android:versionCode="1"
     android:versionName="0.1">
 
