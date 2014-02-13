@@ -16,5 +16,5 @@
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/CalendarCell"
-    android:background="#1fff"
+    android:background="@drawable/cell_day_this_month"
     android:textColor="@color/foreground_full" />
