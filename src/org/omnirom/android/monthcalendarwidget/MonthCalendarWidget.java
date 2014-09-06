@@ -169,8 +169,11 @@ public class MonthCalendarWidget extends AppWidgetProvider {
         DateFormatSymbols dfs = DateFormatSymbols.getInstance();
         String[] weekdays = dfs.getShortWeekdays();
         for (int dayId = 0; dayId < 7; dayId++) {
+            boolean isToday = cal.get(Calendar.DAY_OF_WEEK) == day;
+            int cellHeaderLayoutResId = isToday ? R.layout.cell_header_today : R.layout.cell_header;
             int day = dayIdToDay(dayId, cal);
-            RemoteViews dayRv = new RemoteViews(context.getPackageName(), R.layout.cell_header);
+
+            RemoteViews dayRv = new RemoteViews(context.getPackageName(), cellHeaderLayoutResId);
             dayRv.setTextViewText(android.R.id.text1, weekdays[day]);
             headerRowRv.addView(R.id.row_container, dayRv);
         }
